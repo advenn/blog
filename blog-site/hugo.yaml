@@ -5,3 +5,7 @@ theme: ["PaperMod"]
 caches:
   images:
     dir: :cacheDir/images
+
+params:
+  ShowReadingTime: true
+  ShowShareButtons: true
