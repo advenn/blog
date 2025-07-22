@@ -69,6 +69,10 @@ jobs:
             hugo-
       - name: Configure Git
         run: git config core.quotepath false
+      - name: Install theme
+        run: |
+          cd blog-site
+          git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
       - name: Build with Hugo
         run: |
           cd blog-site
