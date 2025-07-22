@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Adven</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Adven</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Jul 2025 17:07:28 +0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Third</title>
+      <link>http://localhost:1313/posts/third/</link>
+      <pubDate>Tue, 22 Jul 2025 17:07:28 +0500</pubDate>
+      <guid>http://localhost:1313/posts/third/</guid>
+      <description>&lt;p&gt;all the glitters &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second</title>
+      <link>http://localhost:1313/posts/second/</link>
+      <pubDate>Tue, 22 Jul 2025 17:06:38 +0500</pubDate>
+      <guid>http://localhost:1313/posts/second/</guid>
+      <description>&lt;p&gt;there is a lady in a shore&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First</title>
+      <link>http://localhost:1313/posts/first/</link>
+      <pubDate>Sat, 19 Jul 2025 17:57:02 +0500</pubDate>
+      <guid>http://localhost:1313/posts/first/</guid>
+      <description>&lt;p&gt;[Intro]&lt;/p&gt;
+&lt;p&gt;[Verse 1]
+Hey, hey, mama, said the way you move&lt;br&gt;
+Gonna make you sweat, gonna make you groove&lt;br&gt;
+Ah, ah, child, way you shake that thing&lt;br&gt;
+Gonna make you burn, gonna make you sting&lt;br&gt;
+Hey, hey, baby, when you walk that way&lt;br&gt;
+Watch your honey drip, can&amp;rsquo;t keep away&lt;/p&gt;
+&lt;p&gt;[Chorus]&lt;br&gt;
+Oh, yeah, oh, yeah&lt;br&gt;
+Ah, ah, ah&lt;br&gt;
+Oh, yeah, oh, yeah&lt;br&gt;
+Ah, ah, ah&lt;/p&gt;
+&lt;p&gt;[Verse 2]
+I gotta roll, can&amp;rsquo;t stand still&lt;br&gt;
+Got a flaming heart, can&amp;rsquo;t get my fill&lt;br&gt;
+Eyes that shine burning red&lt;br&gt;
+Dreams of you all through my head&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
