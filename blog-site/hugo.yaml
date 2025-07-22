@@ -2,4 +2,6 @@ baseURL: https://adven.uz/
 languageCode: en-us
 title: Adven
 theme: ["PaperMod"]
-
+caches:
+  images:
+    dir: :cacheDir/images
