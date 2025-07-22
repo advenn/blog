@@ -116,14 +116,28 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting Up Telegram Bot on Apps Script
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Here is technical side of what I did on development on Apps Script. main article
+// Main webhook handler - receives all Telegram updates function doPost(e) { try { if (!e || !e.postData) { return ContentService.createTextOutput(&#39;Invalid request&#39;).setMimeType(ContentService.MimeType.TEXT).setStatusCode(400); } const update = JSON.parse(e.postData.contents); if (update.message) { handleMessage(update.message); } // IMPORTANT: Always return OK with proper content type and mainly proper status code (200&lt;=status&lt;300) to prevent retries return ContentService.createTextOutput(&#39;OK&#39;).setMimeType(ContentService.MimeType.TEXT).setStatusCode(200); } catch (error) { console.error(&#39;Error in doPost:&#39;, error); // Even on error, return OK to prevent Telegram retries return ContentService.createTextOutput(&#39;OK&#39;).setMimeType(ContentService.MimeType.TEXT).setStatusCode(500); } } By the nature of apps script, doPost is used when the app received POST request. Telegram sends data via POST to webhook url. So we set up POST listener.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-22 23:24:14 +0500 +05'>July 22, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to Setting Up Telegram Bot on Apps Script" href="http://localhost:1313/posts/setting-up-telegram-bot-on-apps-script/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Apps Script
     </h2>
   </header>
   <div class="entry-content">
-    <p>apps script
-</p>
+    <p>Beginning I mainly started freelancing from 2024. At that time I had a client who had accounting/consulting firm, they needed a telegram bot to create template word contracts. They said they had started doing it but didn’t have time to finish it themselves. I saw their code, it was on apps script. At that time I first came across with apps script. I made the telegram with aiogram/python. btw, I used encoding files with base64, docxtpl to render docx files from template.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-22 22:39:19 +0500 +05'>July 22, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <footer class="entry-footer"><span title='2025-07-22 22:39:19 +0500 +05'>July 22, 2025</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to Apps Script" href="http://localhost:1313/posts/apps-script/"></a>
 </article>
     </main>
