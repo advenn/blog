@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://adven.uz/about/</loc>
     <lastmod>2025-07-22T17:46:16+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://adven.uz/</loc>
     <lastmod>2025-07-22T23:24:14+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/apps-script/</loc>
+    <loc>https://adven.uz/tags/apps-script/</loc>
     <lastmod>2025-07-22T23:24:14+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://adven.uz/posts/</loc>
     <lastmod>2025-07-22T23:24:14+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/setting-up-telegram-bot-on-apps-script/</loc>
+    <loc>https://adven.uz/posts/setting-up-telegram-bot-on-apps-script/</loc>
     <lastmod>2025-07-22T23:24:14+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://adven.uz/tags/</loc>
     <lastmod>2025-07-22T23:24:14+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/telegram-bot/</loc>
+    <loc>https://adven.uz/tags/telegram-bot/</loc>
     <lastmod>2025-07-22T23:24:14+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/apps-script/</loc>
+    <loc>https://adven.uz/posts/apps-script/</loc>
     <lastmod>2025-07-22T22:39:19+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
+    <loc>https://adven.uz/tags/automation/</loc>
     <lastmod>2025-07-22T22:39:19+05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://adven.uz/categories/</loc>
   </url>
 </urlset>

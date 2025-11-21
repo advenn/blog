@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Adven</title>
-    <link>http://localhost:1313/</link>
+    <link>https://adven.uz/</link>
     <description>Recent content on Adven</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Jul 2025 23:24:14 +0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://adven.uz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting Up Telegram Bot on Apps Script</title>
-      <link>http://localhost:1313/posts/setting-up-telegram-bot-on-apps-script/</link>
+      <link>https://adven.uz/posts/setting-up-telegram-bot-on-apps-script/</link>
       <pubDate>Tue, 22 Jul 2025 23:24:14 +0500</pubDate>
-      <guid>http://localhost:1313/posts/setting-up-telegram-bot-on-apps-script/</guid>
-      <description>&lt;p&gt;Here is technical side of what I did on development on Apps Script. &lt;a href=&#34;http://localhost:1313/posts/apps-script&#34;&gt;main article&lt;/a&gt;&lt;/p&gt;
+      <guid>https://adven.uz/posts/setting-up-telegram-bot-on-apps-script/</guid>
+      <description>&lt;p&gt;Here is technical side of what I did on development on Apps Script. &lt;a href=&#34;https://adven.uz/posts/apps-script&#34;&gt;main article&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Main webhook handler - receives all Telegram updates
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;doPost&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt; {
@@ -39,9 +39,9 @@
     </item>
     <item>
       <title>Apps Script</title>
-      <link>http://localhost:1313/posts/apps-script/</link>
+      <link>https://adven.uz/posts/apps-script/</link>
       <pubDate>Tue, 22 Jul 2025 22:39:19 +0500</pubDate>
-      <guid>http://localhost:1313/posts/apps-script/</guid>
+      <guid>https://adven.uz/posts/apps-script/</guid>
       <description>&lt;h2 id=&#34;beginning&#34;&gt;Beginning&lt;/h2&gt;
 &lt;p&gt;I mainly started freelancing from 2024. At that time I had a client who had accounting/consulting firm, they needed a telegram bot to create template word contracts.
 They said they had started doing it but didn&amp;rsquo;t have time to finish it themselves. I saw their code, it was on apps script. At that time I first came across with apps script. I made the telegram with aiogram/python.
