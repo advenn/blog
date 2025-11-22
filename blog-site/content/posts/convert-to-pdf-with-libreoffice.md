@@ -2,12 +2,12 @@
 date: '2025-11-21T23:42:51+01:00'
 draft: false
 title: 'Converting Wide Excel Tables to Single-Page PDFs with LibreOffice'
-tags: ['libreoffice', 'pdf', 'python', 'docker', 'automation']
+tags: ['libreoffice', 'pdf', 'python', 'docker', 'automation', 'file-conversion']
 ---
 
 ## The Problem
 
-While working on a freelance project, I needed to generate PDF reports from Excel files. The challenge? The Excel files were wide - around 15 columns containing employee data like ID, name, email, department, job title, hire date, salary, and more.
+While working on a freelance project, I needed to generate PDF reports from Excel files. The challenge? The Excel files were wide and long. Here we see a sample Excel file around 15 columns containing employee data like ID, name, email, department, job title, hire date, salary, and more.
 
 I used LibreOffice's CLI utility `convert-to` in headless mode to convert the files. The conversion worked, but the result was unusable:
 
@@ -80,7 +80,7 @@ RUN apt-get update && apt-get install -y \
     libxcursor1 \
     libpng16-16 \
     libfreetype6 \
-    libreoffice-core \  
+    libreoffice-core \
     --no-install-recommends && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -92,7 +92,7 @@ This installs all required dependencies:
 - Graphics libraries required by LibreOffice
 - Fonts for proper text rendering
 - Python 3 and pip
-- LibreOffice core package (as a base), the manual installation won't work without core package
+- LibreOffice core package (as a base), it is necessary! the manual installation won't work without core package
 
 ```dockerfile
 # Copy and run the LibreOffice installation script
