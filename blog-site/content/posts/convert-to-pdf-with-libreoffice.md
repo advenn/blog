@@ -38,6 +38,23 @@ This command tells LibreOffice to:
 - Convert to PDF using the Calc PDF export filter
 - Enable the `SinglePageSheets` option to fit the entire sheet on one page
 
+## Important: LibreOffice Version Requirements
+
+**The `SinglePageSheets` parameter is only available in LibreOffice 20.x and later versions.** The `libreoffice-core` package from Ubuntu's apt repository installs version 7.x, which does **not** support this parameter.
+
+This means you need to manually install a newer version from the [Document Foundation's download page](https://download.documentfoundation.org/libreoffice/stable/).
+
+### Version Availability Issues
+
+There's another gotcha: LibreOffice occasionally removes older versions from their download repository. I experienced this firsthand - I was using version 24.x, and after some time it disappeared from their repository, breaking my builds.
+
+To handle this, the project includes scripts that:
+1. **Automatically detect the latest stable version** from the Document Foundation's download page
+2. **Download and install it dynamically** during the Docker build
+3. **Create a generic symlink** (`libreoffice-generic`) so your code doesn't need to know the specific version number
+
+This approach ensures your builds always get the latest working version without manual intervention.
+
 ## Docker Implementation
 
 I've created a complete Docker setup that wraps this functionality in a simple FastAPI web service. You can find the full source code on GitHub: [https://github.com/advenn/libreoffice_sample](https://github.com/advenn/libreoffice_sample)
@@ -100,7 +117,45 @@ COPY scripts/install_libre.sh /tmp/install_libre.sh
 RUN chmod +x /tmp/install_libre.sh && /tmp/install_libre.sh && rm /tmp/install_libre.sh
 ```
 
-The installation script automatically downloads the latest stable version of LibreOffice from the Document Foundation and installs it. This ensures you always get the most recent version with all features.
+### The Installation Script
+
+This is where the magic happens. The `install_libre.sh` script handles the version detection and installation:
+
+```bash
+# Function to get latest LibreOffice version
+get_latest_version() {
+    LATEST_VERSION=$(curl -s https://download.documentfoundation.org/libreoffice/stable/ | \
+        grep -oP 'href="\d+\.\d+\.\d+/"' | \
+        grep -oP '\d+\.\d+\.\d+' | \
+        sort -V | \
+        tail -n 1)
+
+    if [ -z "$LATEST_VERSION" ]; then
+        echo "25.2.5"  # Fallback version
+    else
+        echo "$LATEST_VERSION"
+    fi
+}
+
+LIBREOFFICE_VERSION=$(get_latest_version)
+
+# Download and install
+wget "https://download.documentfoundation.org/libreoffice/stable/${LIBREOFFICE_VERSION}/deb/x86_64/LibreOffice_${LIBREOFFICE_VERSION}_Linux_x86-64_deb.tar.gz"
+tar -xzf "LibreOffice_${LIBREOFFICE_VERSION}_Linux_x86-64_deb.tar.gz"
+cd "LibreOffice_${LIBREOFFICE_VERSION}"*_Linux_x86-64_deb/DEBS
+dpkg -i *.deb
+apt-get install -f -y  # Fix dependencies
+
+# Create generic symlink
+LIBRE_CMD=$(find /opt/libreoffice*/program -name "soffice" | head -n 1)
+ln -sf "$LIBRE_CMD" /usr/local/bin/libreoffice-generic
+```
+
+The script:
+1. Scrapes the Document Foundation's stable release page to find the latest version
+2. Downloads and extracts the .deb packages
+3. Installs them with `dpkg` and fixes any missing dependencies
+4. Creates a generic symlink so your application code can call `libreoffice-generic` regardless of the actual version installed
 
 ```dockerfile
 # Create necessary directories
