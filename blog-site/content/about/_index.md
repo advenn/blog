@@ -37,6 +37,7 @@ On this blog, I am going to write:
 Feel free to connect with me on:
 * [My GitHub](https://github.com/advenn)
 * [My LinkedIn](https://linkedin.com/advenuz)
+* [qurbonovasadbek@gmail.com](mailto:qurbonovasadbek@gmail.com)
 * [**Download My Resume**](/files/Qurbonov-Asadbek-resume.pdf)
 
 Thanks for stopping by!

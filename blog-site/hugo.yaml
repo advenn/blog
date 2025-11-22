@@ -1,7 +1,9 @@
 baseURL: https://adven.uz/
 languageCode: en-us
 title: Asadbek Kurbonov
-theme: ["PaperMod"]
+theme: [ "PaperMod" ]
+pagination:
+  pagerSize: 10
 caches:
   images:
     dir: :cacheDir/images
