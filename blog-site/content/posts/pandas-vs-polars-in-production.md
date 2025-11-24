@@ -2,6 +2,7 @@
 date: '2025-11-23T23:02:39+01:00'
 draft: false
 title: 'Pandas vs Polars in Production: Performance Comparison'
+tags: ['pandas', 'polars', 'data-processing', 'data-pipeline']
 ---
 
 When performance bottlenecks started affecting my production data pipeline, I decided to test whether Polars could deliver on its performance promises. This is what I learned from migrating a real production workload from Pandas to Polars.
@@ -127,3 +128,7 @@ The CPU spikes disappeared. Polars distributed the workload across both cores, r
 5. **Migration strategy matters** - Gradual rollout (local → staging → production) helped catch issues early and build confidence
 
 The migration from Pandas to Polars was worth the investment. Processing time was cut in half, CPU usage became stable and predictable, and the application performed consistently across environments. For production workloads where performance matters, Polars is a strong choice.
+
+---
+
+**Next in this series:** While Polars solved the CPU performance issues, a memory problem persisted that led to architectural changes. Read about how I split the application into Go + Python services in [Part 2: When You Can't Find the Bug - Architecting Around Production Issues](../go-python-architecture/).
